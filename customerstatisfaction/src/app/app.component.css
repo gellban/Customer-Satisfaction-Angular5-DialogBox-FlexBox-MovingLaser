@@ -1,0 +1,42 @@
+#menu ul{
+    list-style: none;
+    font-size: 1.5em;
+    float: right;
+    position: relative;
+    right:20px;
+}
+#menu li{
+    display: inline;
+    font-size: 1.5em;
+    padding-right: 20px;
+}
+.footer{
+    background-color: black;
+    height:45px;
+    width:100%;
+    overflow:hidden;
+    position: absolute;
+    bottom:35px;
+    text-align: center;
+}
+.footer-bar{
+    color:white;
+    display:left;
+    margin-top:5px;
+    font-size:1.2em;
+}
+
+.lazer{
+    background-color: #33E0FF;
+    background-image: linear-gradient(to right,
+    rgba(0,0,0,.9) 25%,
+    rgba(0,0,0,.1) 50%,
+    rgba(0,0,0,.9) 75%);
+    color:white;
+    height:100%;
+    width:40%;
+    -webkit-animation: 4s linear 0s infinite alternate move_lazer;
+    animation: 4s linear 0s infinite alternate move_lazer;
+}
+@-webkit-keyframes move_lazer {from {margin-left :-40%} to {margin-left :120%}}
+@keyframes move_lazer {from {margin-left :-40%} to {margin-left :120%}}
